@@ -1,4 +1,4 @@
-(kicad_symbol_lib (version 20200126) (host kicad_symbol_editor "(5.99.0-2012-g40e0a4295)")
+(kicad_symbol_lib (version 20200126) (host kicad_symbol_editor "(5.99.0-2038-g19b7755ab)")
   (symbol "Display_Graphic_Extra:ER-TFT013-1"
     (property "Reference" "U" (id 0) (at 7.62 11.43 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -34,41 +34,9 @@
         (name "SDI" (effects (font (size 1.27 1.27))))
         (number "12" (effects (font (size 1.27 1.27))))
       )
-      (pin unconnected line (at -1.27 7.62 0) (length 3.81) hide
-        (name "DB0" (effects (font (size 1.27 1.27))))
-        (number "13" (effects (font (size 1.27 1.27))))
-      )
-      (pin unconnected line (at -1.27 5.08 0) (length 3.81) hide
-        (name "DB1" (effects (font (size 1.27 1.27))))
-        (number "14" (effects (font (size 1.27 1.27))))
-      )
-      (pin unconnected line (at -1.27 2.54 0) (length 3.81) hide
-        (name "DB2" (effects (font (size 1.27 1.27))))
-        (number "15" (effects (font (size 1.27 1.27))))
-      )
-      (pin unconnected line (at -1.27 0 0) (length 3.81) hide
-        (name "DB3" (effects (font (size 1.27 1.27))))
-        (number "16" (effects (font (size 1.27 1.27))))
-      )
-      (pin unconnected line (at -1.27 -2.54 0) (length 3.81) hide
-        (name "DB4" (effects (font (size 1.27 1.27))))
-        (number "17" (effects (font (size 1.27 1.27))))
-      )
-      (pin unconnected line (at -1.27 -5.08 0) (length 3.81) hide
-        (name "DB5" (effects (font (size 1.27 1.27))))
-        (number "18" (effects (font (size 1.27 1.27))))
-      )
-      (pin unconnected line (at -1.27 -7.62 0) (length 3.81) hide
-        (name "DB6" (effects (font (size 1.27 1.27))))
-        (number "19" (effects (font (size 1.27 1.27))))
-      )
       (pin input line (at -11.43 0 0) (length 3.81)
         (name "LEDK" (effects (font (size 1.27 1.27))))
         (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin unconnected line (at -1.27 -10.16 0) (length 3.81) hide
-        (name "DB7" (effects (font (size 1.27 1.27))))
-        (number "20" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at 11.43 -5.08 180) (length 3.81)
         (name "TE" (effects (font (size 1.27 1.27))))
