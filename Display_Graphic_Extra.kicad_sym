@@ -254,18 +254,22 @@
       (pin output line (at -16.51 -22.86 0) (length 5.08)
         (name "X+" (effects (font (size 1.27 1.27))))
         (number "44" (effects (font (size 1.27 1.27))))
+        (alternate "TP_SCL" input line)
       )
       (pin output line (at -16.51 -25.4 0) (length 5.08)
         (name "Y+" (effects (font (size 1.27 1.27))))
         (number "45" (effects (font (size 1.27 1.27))))
+        (alternate "TP_SDA" bidirectional line)
       )
       (pin output line (at -16.51 -27.94 0) (length 5.08)
         (name "X-" (effects (font (size 1.27 1.27))))
         (number "46" (effects (font (size 1.27 1.27))))
+        (alternate "TP_INT" output line)
       )
       (pin output line (at -16.51 -30.48 0) (length 5.08)
         (name "Y-" (effects (font (size 1.27 1.27))))
         (number "47" (effects (font (size 1.27 1.27))))
+        (alternate "TP_RST" input line)
       )
       (pin passive line (at -16.51 -35.56 0) (length 5.08) hide
         (name "GND" (effects (font (size 1.27 1.27))))
@@ -725,7 +729,7 @@
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "50" (effects (font (size 1.27 1.27))))
       )
-      (pin unconnected line (at -15.24 -35.56 0) (length 3.81) hide
+      (pin no_connect line (at -15.24 -35.56 0) (length 3.81) hide
         (name "NC" (effects (font (size 1.27 1.27))))
         (number "51" (effects (font (size 1.27 1.27))))
       )
@@ -802,7 +806,7 @@
       )
     )
     (symbol "ER-TFT1.14-1_1_1"
-      (pin unconnected line (at 0 3.81 0) (length 3.81) hide
+      (pin no_connect line (at 0 3.81 0) (length 3.81) hide
         (name "~" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
@@ -822,7 +826,7 @@
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "13" (effects (font (size 1.27 1.27))))
       )
-      (pin unconnected line (at 0 1.27 0) (length 3.81) hide
+      (pin no_connect line (at 0 1.27 0) (length 3.81) hide
         (name "~" (effects (font (size 1.27 1.27))))
         (number "2" (effects (font (size 1.27 1.27))))
       )
@@ -850,7 +854,7 @@
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "8" (effects (font (size 1.27 1.27))))
       )
-      (pin unconnected line (at 0 -1.27 0) (length 3.81) hide
+      (pin no_connect line (at 0 -1.27 0) (length 3.81) hide
         (name "~" (effects (font (size 1.27 1.27))))
         (number "9" (effects (font (size 1.27 1.27))))
       )

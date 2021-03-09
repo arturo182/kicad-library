@@ -1,5 +1,5 @@
-(kicad_symbol_lib (version 20200126) (host kicad_symbol_editor "(5.99.0-2012-g40e0a4295)")
-  (symbol "Regulator_Switching_Extra:MT3608"
+(kicad_symbol_lib (version 20201005) (generator kicad_symbol_editor)
+  (symbol "Regulator_Switching_Extra:MT3608" (in_bom yes) (on_board yes)
     (property "Reference" "U" (id 0) (at 6.35 8.89 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
@@ -43,7 +43,105 @@
       )
     )
   )
-  (symbol "Regulator_Switching_Extra:TPS62135"
+  (symbol "Regulator_Switching_Extra:TPS61090" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 7.62 16.51 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TPS61090" (id 1) (at 0 -13.97 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_DFN_QFN:Texas_S-PVQFN-N16_EP2.7x2.7mm_ThermalVias" (id 2) (at -30.48 -16.51 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps61090.pdf" (id 3) (at -24.13 -19.05 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "ki_keywords" "Adjustable 2A battery boost converter" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "2A Step-Up DC-DC Converter for Batteries, Isw up to 2500mA, Adjustable output voltage, QFN-16" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "Texas*S?PVQFN?N*" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "TPS61090_0_1"
+      (rectangle (start -7.62 15.24) (end 7.62 -12.7)
+        (stroke (width 0.254)) (fill (type background))
+      )
+    )
+    (symbol "TPS61090_0_0"
+      (pin power_out line (at 10.16 12.7 180) (length 2.54)
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -10.16 -7.62 0) (length 2.54)
+        (name "SYNC" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -10.16 7.62 0) (length 2.54)
+        (name "EN" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin open_collector line (at 10.16 -10.16 180) (length 2.54)
+        (name "LBO" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -10.16 -10.16 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 5.08 180) (length 2.54)
+        (name "FB" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 10.16 12.7 180) (length 2.54) hide
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 10.16 12.7 180) (length 2.54) hide
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -10.16 -10.16 0) (length 2.54) hide
+        (name "PAD" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27))))
+      )
+      (pin unconnected line (at 0 -5.08 180) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -10.16 12.7 0) (length 2.54)
+        (name "SW" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -10.16 12.7 0) (length 2.54) hide
+        (name "SW" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -10.16 -10.16 0) (length 2.54) hide
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -10.16 -10.16 0) (length 2.54) hide
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -10.16 -10.16 0) (length 2.54) hide
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -10.16 10.16 0) (length 2.54)
+        (name "VBAT" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -10.16 0 0) (length 2.54)
+        (name "LBI" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Regulator_Switching_Extra:TPS62135" (in_bom yes) (on_board yes)
     (property "Reference" "U" (id 0) (at 8.89 13.97 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
@@ -111,7 +209,7 @@
       )
     )
   )
-  (symbol "Regulator_Switching_Extra:TPS65261"
+  (symbol "Regulator_Switching_Extra:TPS65261" (in_bom yes) (on_board yes)
     (property "Reference" "U" (id 0) (at 16.51 63.5 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
@@ -135,99 +233,171 @@
         (effects (font (size 1.27 1.27)))
       )
       (polyline
-        (pts (xy 10.16 25.4) (xy 7.62 25.4))
+        (pts
+          (xy 10.16 25.4)
+          (xy 7.62 25.4)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 11.43 22.86) (xy 7.62 22.86))
+        (pts
+          (xy 11.43 22.86)
+          (xy 7.62 22.86)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 11.43 15.24) (xy 7.62 15.24))
+        (pts
+          (xy 11.43 15.24)
+          (xy 7.62 15.24)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 25.4) (xy -8.89 25.4))
+        (pts
+          (xy -7.62 25.4)
+          (xy -8.89 25.4)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 22.86) (xy -8.89 22.86))
+        (pts
+          (xy -7.62 22.86)
+          (xy -8.89 22.86)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 5.08) (xy -8.89 5.08))
+        (pts
+          (xy -7.62 5.08)
+          (xy -8.89 5.08)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 10.16) (xy -11.43 10.16))
+        (pts
+          (xy -7.62 10.16)
+          (xy -11.43 10.16)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 17.78) (xy -11.43 17.78))
+        (pts
+          (xy -7.62 17.78)
+          (xy -11.43 17.78)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 10.16 -5.08) (xy 7.62 -5.08))
+        (pts
+          (xy 10.16 -5.08)
+          (xy 7.62 -5.08)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -20.32) (xy -11.43 -20.32))
+        (pts
+          (xy -7.62 -20.32)
+          (xy -11.43 -20.32)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -25.4) (xy -8.89 -25.4))
+        (pts
+          (xy -7.62 -25.4)
+          (xy -8.89 -25.4)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -12.7) (xy -11.43 -12.7))
+        (pts
+          (xy -7.62 -12.7)
+          (xy -11.43 -12.7)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 11.43 -15.24) (xy 7.62 -15.24))
+        (pts
+          (xy 11.43 -15.24)
+          (xy 7.62 -15.24)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -5.08) (xy -8.89 -5.08))
+        (pts
+          (xy -7.62 -5.08)
+          (xy -8.89 -5.08)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -7.62) (xy -8.89 -7.62))
+        (pts
+          (xy -7.62 -7.62)
+          (xy -8.89 -7.62)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 11.43 -7.62) (xy 7.62 -7.62))
+        (pts
+          (xy 11.43 -7.62)
+          (xy 7.62 -7.62)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -53.34) (xy -8.89 -53.34))
+        (pts
+          (xy -7.62 -53.34)
+          (xy -8.89 -53.34)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 10.16 -35.56) (xy 7.62 -35.56))
+        (pts
+          (xy 10.16 -35.56)
+          (xy 7.62 -35.56)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -48.26) (xy -11.43 -48.26))
+        (pts
+          (xy -7.62 -48.26)
+          (xy -11.43 -48.26)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -38.1) (xy -8.89 -38.1))
+        (pts
+          (xy -7.62 -38.1)
+          (xy -8.89 -38.1)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -35.56) (xy -8.89 -35.56))
+        (pts
+          (xy -7.62 -35.56)
+          (xy -8.89 -35.56)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy -7.62 -43.18) (xy -11.43 -43.18))
+        (pts
+          (xy -7.62 -43.18)
+          (xy -11.43 -43.18)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 11.43 -45.72) (xy 7.62 -45.72))
+        (pts
+          (xy 11.43 -45.72)
+          (xy 7.62 -45.72)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
       (polyline
-        (pts (xy 11.43 -38.1) (xy 7.62 -38.1))
+        (pts
+          (xy 11.43 -38.1)
+          (xy 7.62 -38.1)
+        )
         (stroke (width 0.0006)) (fill (type none))
       )
     )
