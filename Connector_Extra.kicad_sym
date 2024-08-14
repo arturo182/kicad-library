@@ -14,7 +14,7 @@
 				)
 			)
 		)
-		(property "Value" "DVI-D_Mini"
+		(property "Value" "DVI-D_Micro"
 			(at -1.524 -6.35 0)
 			(effects
 				(font
@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "DVI-D_Mini_0_1"
+		(symbol "DVI-D_Micro_0_1"
 			(rectangle
 				(start -8.89 25.4)
 				(end 8.89 -5.08)
@@ -80,7 +80,7 @@
 				)
 			)
 		)
-		(symbol "DVI-D_Mini_1_1"
+		(symbol "DVI-D_Micro_1_1"
 			(pin no_connect line
 				(at -3.81 8.89 0)
 				(length 2.54) hide
